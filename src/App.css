@@ -16,17 +16,5 @@
   grid-template-rows: 60px 1fr;
   grid-template-columns: 2fr 10fr;
   grid-gap: 10px; }
-  .App-wrapper header {
-    grid-area: h;
-    background: green; }
-    .App-wrapper header img {
-      width: 20px; }
-  .App-wrapper nav {
-    grid-area: n;
-    background: burlywood; }
-  .App-wrapper .content {
-    grid-area: c;
-    background: cornflowerblue; }
-    .App-wrapper .content img {
-      width: 100%;
-      height: 200px; }
+
+
