@@ -4,5 +4,9 @@ nav {
 
 	.items{
 		color: #fff;
+
+		& a{
+			text-decoration: none;
+		}
 	}
 }

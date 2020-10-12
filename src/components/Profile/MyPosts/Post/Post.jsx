@@ -8,7 +8,7 @@ const Post = (props) => {
 						<img src={props.src} alt="Avatar wasn't loaded"/>
 						{props.message}
 						<form>
-							<button >Like</button>
+							<button>Like {props.likeCount}</button>
 						</form>
 					</div>
 	)
