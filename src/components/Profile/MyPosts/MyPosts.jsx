@@ -13,7 +13,7 @@ const MyPosts = () => {
 					<Post
 						likeCount="10"
 						message="Hi buddy, How are u?"
-						src="https://pbs.twimg.com/profile_images/431529196478038018/i_qx9taM.jpeg"
+						src="https://pbs.twimg.com/profile_images/460533834547601408/5bbvogtJ.jpeg"
 					/>
 					<Post
 						likeCount="23"

@@ -6,7 +6,7 @@ const Profile = () => {
 	return (
 		<div className={s.content}>
 			<div>
-				<img src="https://coverfiles.alphacoders.com/495/49555.jpg" alt="photo of sea"/>
+				<img className={s.img} src="https://coverfiles.alphacoders.com/495/49555.jpg" alt="photo of sea"/>
 			</div>
 			<div>
 				ava + desciption
