@@ -1,10 +1,21 @@
 import React from "react";
 import s from "./Dialogs.module.scss"
 
-const Dialogs = () => {
+
+const Dialogs = (p) => {
 	return (
-		<div>
-			Dialogs
+		<div className={s.dialogs}>
+			<div className={s.dialogsItmes}>
+				<div className={s.dialog}>
+				vlad
+				</div>
+			</div>
+
+			<div className={s.messages}>
+				<div className={s.message}>
+					hi, how are ya ?
+				</div>
+			</div>
 		</div>
 	)
 }

@@ -3,10 +3,14 @@ nav {
 	background: burlywood;
 
 	.items{
-		color: #fff;
 
 		& a{
 			text-decoration: none;
+			color: #fff;
+		}
+
+		& a.activeLink{
+			color: gold;
 		}
 	}
 }
