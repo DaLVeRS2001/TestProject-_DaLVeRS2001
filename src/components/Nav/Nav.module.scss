@@ -1,15 +1,16 @@
 nav {
 	grid-area: n;
 	background: burlywood;
+	padding: 10px;
 
 	.items{
 
-		& a{
+		 a{
 			text-decoration: none;
 			color: #fff;
 		}
 
-		& a.activeLink{
+		 a.activeLink{
 			color: gold;
 		}
 	}
