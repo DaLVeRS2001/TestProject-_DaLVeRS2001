@@ -10,16 +10,15 @@ import {BrowserRouter, Route} from "react-router-dom";
 
 
 
-
-const App = () => {
+const App = (props) => {
   return (
     <BrowserRouter>
       <div className="App-wrapper">
         <Header/>
         <Nav/>
         <div className="App-wrapper-content">
-          <Route path="/profile" component={Profile}/>
-          <Route path="/dialogs" component={Dialogs}/>
+          <Route path="/profile" render={()=> <Profile pD={props.pD}/>}/>
+          <Route path="/dialogs" render={()=> <Dialogs dD={props.dD} mD={props.mD}/>}/>
         </div>
       </div>
     </BrowserRouter>
@@ -28,4 +27,12 @@ const App = () => {
 
 
 
+
+
+
+
+
+
+
 export default App;
+
