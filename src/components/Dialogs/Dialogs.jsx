@@ -1,10 +1,8 @@
 
 import React from "react";
 import s from "./Dialogs.module.scss"
-import {NavLink} from "react-router-dom";
 import Dialog from "./Dialog/Dialog";
 import Message from "./Message/Message";
-import App from "../../App";
 
 
 //data
@@ -15,9 +13,9 @@ import App from "../../App";
 
 
 
-const Dialogs = (p) => {
-	let messagesList = p.mD.map(m=> <Message id={m.id} message={m.message}/>)
-	let dialogsList = p.dD.map(d=> <Dialog id={d.id} name={d.name}/>)
+const Dialogs = (props) => {
+	let messagesList = props.state.messagesData.map(m=> <Message id={m.id} message={m.message}/>)
+	let dialogsList = props.state.dialogsData.map(d=> <Dialog id={d.id} name={d.name} src={d.src}/>)
 
 	return<div className={s.dialogs}>
 			<div className={s.dialogsItems}>

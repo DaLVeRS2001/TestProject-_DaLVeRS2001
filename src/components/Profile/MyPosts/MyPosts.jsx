@@ -11,9 +11,9 @@ import Post from "./Post/Post";
 
 
 
-const MyPosts = (p) => {
-	console.log(p.postsData)
-	let postsList = p.postsData.map(p=> <Post
+const MyPosts = (props) => {
+
+	let postsList = props.postsData.map(p=> <Post
 		likeCount={p.likeCount}
 		message={p.message}
 		src={p.src}

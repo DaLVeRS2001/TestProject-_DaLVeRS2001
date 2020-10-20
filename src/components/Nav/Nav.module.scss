@@ -4,6 +4,7 @@ nav {
 	padding: 10px;
 
 	.items{
+		margin-bottom: 5px;
 
 		 a{
 			text-decoration: none;
@@ -12,6 +13,25 @@ nav {
 
 		 a.activeLink{
 			color: gold;
+		}
+	}
+
+	.itemSettings{
+		margin-top: 15px;
+		color: green;
+	}
+
+	.itemFriends{
+		margin-top: 30px;
+
+		div{
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+
+		}
+
+		.itemFriendsLink{
+			font-size: 30px;
 		}
 	}
 }
