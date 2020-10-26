@@ -7,31 +7,29 @@ import Nav from "./components/Nav/Nav";
 import Profile from "./components/Profile/Profile";
 import Dialogs from "./components/Dialogs/Dialogs";
 import {BrowserRouter, Route} from "react-router-dom";
-import state from "./Redux/State";
+
+
 
 
 
 const App = (props) => {
   return (
-      <div className="App-wrapper">
-        <Header/>
-        <Nav state={props.state.navPage}/>
-        <div className="App-wrapper-content">
-          <Route path="/profile" render={()=> <Profile state={props.state.profilePage}/>}/>
-          <Route path="/dialogs" render={()=> <Dialogs state={props.state.messagePage}/>}/>
-        </div>
+    <div className='App-wrapper'>
+      <Header />
+      <Nav />
+      <div className='App-wrapper-content'>
+        <Route path='/dialogs'
+               render={ () => <Dialogs state={props.state.dialogsPage} /> }/>
+
+        <Route path='/profile'
+               render={ () => <Profile
+                 profilePage={props.state.profilePage}
+                 addPost={props.addPost}
+                 updateNewPostText={props.updateNewPostText}
+               /> }/>
       </div>
-  );
-};
-
-
-
-
-
-
-
-
-
+    </div>
+  )
+}
 
 export default App;
-
