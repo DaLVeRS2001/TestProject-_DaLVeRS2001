@@ -16,10 +16,10 @@ const App = (props) => {
   return (
     <div className='App-wrapper'>
       <Header />
-      <Nav />
+      <Nav state={props.state.navPage} />
       <div className='App-wrapper-content'>
         <Route path='/dialogs'
-               render={ () => <Dialogs state={props.state.dialogsPage} /> }/>
+               render={ () => <Dialogs state={props.state.messagePage} /> }/>
 
         <Route path='/profile'
                render={ () => <Profile

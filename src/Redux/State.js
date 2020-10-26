@@ -22,7 +22,7 @@ let state = {
 			// {id: 4, message: "i'm here", likeCount: 4, src: ''},
 			// {id: 5, message: "nice to see you again bro", likeCount: 55, src: ''},
 		],
-		newPostText: 'it-kamasutra.com'
+		newPostText: ''
 	},
 
 	messagePage: {
@@ -64,7 +64,8 @@ export const addPost = () => {
 	let newPost = {
 		id: 5,
 		message: state.profilePage.newPostText,
-		likesCount: 0
+		likeCount: Math.round(Math.random() * 99 + 1),
+		src: "https://im0-tub-ru.yandex.net/i?id=e11274ee0fbeaccac0618cce6beeebac&n=13&exp=1"
 	};
 	state.profilePage.postsData.push(newPost);
 	state.profilePage.newPostText = '';
