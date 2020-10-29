@@ -4,8 +4,8 @@ import {NavLink} from "react-router-dom";
 import ListFriends from "./ListFriends/ListFriends";
 
 const Nav = (props) => {
-	const friendsListLink = props.state.friendsListLink[0];
 
+	const friendsListLink = props.state.friendsListLinkArr[0];
 	let friendsList =
 		props.state.friendsData.map(i=> <ListFriends name={i.name} id={i.id} avaSrc={i.avaSrc} links={'/'+i.id}/>)
 
